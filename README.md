@@ -1,4 +1,4 @@
-# codecademy-git-test
- 
-Hello! 
-This is a Codecademy Git tutorial.
+# python_study
+
+
+This is where I do daily coding practices in Python.
