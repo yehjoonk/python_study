@@ -1,0 +1,627 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "1.Python Basic Syntax & Variable Types\n",
+    "====\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Using Markdown Cells\n",
+    "\n",
+    "주피터 노트북에서는 마크다운과 코딩 셀을 쓸 수 있습니다. 코딩은 말 그대로 코딩을 하는 셀이고, 마크다운은 코딩에 추가설명이 필요할때 글을 읽기 좋게 작성할 수 있도록 도와주는 셀입니다. \n",
+    "지금 보시는 이 글도 마크다운 셀에서 작성되었습니다. \n",
+    "\n",
+    "왼쪽 + 버튼을 눌러 새로운 셀을 생성한 뒤, '마크다운'으로 바꾼 후, 하고싶은 말들을 적어보세요.  \n",
+    "마크다운 사용 팁은 아래 사이트에 정리되어 있습니다.\n",
+    "\n",
+    "https://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/Working%20With%20Markdown%20Cells.html"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "안녕하세요. *첫 수업*입니다. \n",
+    "\n",
+    "- 오늘은 변수타입에 대해 배우겠습니다."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Calculations\n",
+    "\n",
+    "아래 셀에 간단한 수식을 실행시켜 보세요. 실행 할 땐 Run 버튼을 누르시거나 shift + enter 을 누르시면 됩니다.\n",
+    "\n",
+    "- 더하기 : +\n",
+    "- 빼기 : -\n",
+    "- 곱하기 : *\n",
+    "- 나누기 : / \n",
+    "- 제곱 : ** \n",
+    "- 나머지수: %"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "5"
+      ]
+     },
+     "execution_count": 1,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "2+3"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "12"
+      ]
+     },
+     "execution_count": 4,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "6*2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "5.0"
+      ]
+     },
+     "execution_count": 3,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "10/2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "4"
+      ]
+     },
+     "execution_count": 5,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "2**2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "1"
+      ]
+     },
+     "execution_count": 6,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "10%3"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Built-in Functions\n",
+    "\n",
+    "파이썬에 기본으로 탑재되어있는 펑션들 중, 아주 간단한 펑션을 사용해 볼까요? print()펑션을 이용해서 \"Hello World!\" 를 출력시켜 봅시다.\n",
+    "\n",
+    "https://docs.python.org/3/library/functions.html"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Hello World!\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"Hello World!\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Creating Variables - string\n",
+    "\n",
+    "아래 코딩 셀에 my_name 이라는 **변수**를 만들어서, 이름을 저장해 보세요.\n",
+    "\n",
+    "이 변수는 단어로 구성되어있기 때문에 **'String'타입** 을 가지고 있습니다. 스트링 타입을 변수로 지정해 줄 때는 꼭 \" 혹은 '를 양 옆에 붙여주셔야 합니다."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "111\n"
+     ]
+    }
+   ],
+   "source": [
+    "my_name = \"111\"\n",
+    "print(my_name)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "**print** 펑션을 이용해서 저장한 변수를 프린트 해 봅시다.\n",
+    "아래 셀을 'Run' 버튼을 눌러 실행시켜 보세요. (단축키: shift + enter)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Hello and Welcome Gina Kim!\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"Hello and Welcome \" + my_name + \"!\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "두 가지 스트링을 더할때도, 간단하게 + 사인으로 더해주면 됩니다. "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Gina Kim\n"
+     ]
+    }
+   ],
+   "source": [
+    "my_name = \"Gina\" + \" Kim\"\n",
+    "print(my_name)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "first_name 과 last_name 변수를 따로 저장 한 후, + 사인으로 합치면서 my_name이라는 변수에 다시 저장해 준 후 출력해 주세요."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "GinaKim\n"
+     ]
+    }
+   ],
+   "source": [
+    "first_name = 'Gina'\n",
+    "last_name = 'Kim'\n",
+    "my_name = first_name + last_name\n",
+    "print(my_name)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "여러 줄의 string 을 저장해 줄 때는, ''' 혹은 \"\"\" 사이에 저장해 줍니다. "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "\n",
+      "date: 11 March 2021\n",
+      "topic: Data Science Study\n",
+      "attendees: W Network Members\n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "meeting_minutes = \"\"\"\n",
+    "date: 11 March 2021\n",
+    "topic: Data Science Study\n",
+    "attendees: W Network Members\n",
+    "\"\"\"\n",
+    "\n",
+    "print(meeting_minutes)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Creating Variables - int and float\n",
+    "파이썬에는 두 가지 숫자 타입이 있습니다. **Integer**타입은 1, 100, 2000 같은 정수를 나타내고, **float** 타입은 3.14, 9.99999 같은 소수를 나타냅니다. IMBD 에서 좋아하는 영화를 검색해서 아래 변수를 채워넣어 보세요.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#string variable\n",
+    "movie_title =  \"The Dark Knight\"\n",
+    "\n",
+    "#int variable\n",
+    "movie_release_year = 2008\n",
+    "\n",
+    "#float variable\n",
+    "movie_rating = 9.0"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "한 문장에 string 과 int/float을 표시해주려면, str()을 이용해서 int나 float을 스트링으로 바꿔주면 됩니다. 위에 저장되어있는 변수들을 이용해 \"My favourite movie is *movie_title*, and it was released in *movie_release_year*\" 라는 문장을 출력해 보세요."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "My favourite movie is The Dark Knight and it was released in 2008\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"My favourite movie is \"+ movie_title + \" and it was released in \" + str(movie_release_year) )"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Booleans - True or False\n",
+    "\n",
+    "마지막 데이터 타입은 True / False 값을 나타내는 데이터 타입입니다. 나중에 if / while 등 컨디션을 만들어줄때 유용하게 쓰입니다."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "my_turn = True"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "False\n"
+     ]
+    }
+   ],
+   "source": [
+    "your_turn = not my_turn\n",
+    "print(your_turn)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Calculation with Variables\n",
+    "간단한 수식을 변수에 저장한 후, 실행시켜 봅시다. 4천원짜리 라떼 3잔을 주문하는 경우, 아래 변수를 채워 넣어 보세요."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "latte_price = 4000\n",
+    "latte_quantity = 3"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "12000\n"
+     ]
+    }
+   ],
+   "source": [
+    "total_price = latte_price * latte_quantity\n",
+    "print(total_price)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "커피의 가격은 변하지 않았는데, 수량만 1개 더 늘어났을때는 아래와 같이 수량을 업데이트 해 줍니다."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "4\n"
+     ]
+    }
+   ],
+   "source": [
+    "latte_quantity = 4\n",
+    "print(latte_quantity)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "혹은 이렇게 써도 됩니다."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "5\n"
+     ]
+    }
+   ],
+   "source": [
+    "latte_quantity += 1\n",
+    "print(latte_quantity)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "7\n"
+     ]
+    }
+   ],
+   "source": [
+    "latte_quantity += 2\n",
+    "print(latte_quantity)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "다시 한번 total_price 를 구한 후, 출력해주세요."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "28000\n"
+     ]
+    }
+   ],
+   "source": [
+    "total_price = latte_price * latte_quantity\n",
+    "print(total_price)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#### Quiz 1\n",
+    "\n",
+    "아메리카노 가격과 카푸치노 가격을 더하려고 합니다. \n",
+    "아래 셀을 실행시켜보면, 오류를 확인 할 수 있습니다. \n",
+    "결과값이 정확히 나오려면 어떻게 바꿔줘야 할까요?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "5000\n"
+     ]
+    }
+   ],
+   "source": [
+    "americano_price = 2000\n",
+    "cappuccino_price = 3000\n",
+    "print(americano_price + cappuccino_price)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "#### Quiz 2\n",
+    "이름과 나이를 아래 변수에 저장해 주세요."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "my_name = \"Gina Kim\"\n",
+    "my_age = 30"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "str()펑션을 이용해 \"My name is *my_name* and I am *my_age* years old\"라는 문장을 출력해 주세요."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "My name is Gina Kim and I am 30 years old.\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"My name is \" + my_name + \" and I am \" + str(my_age) + \" years old.\")"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.8.3"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
