@@ -65,7 +65,7 @@
    "source": [
     "#### 데이터 클리닝 할 때 유용한것들 몇가지\n",
     "- df.shape : 크기확인\n",
-    "- df.rename(columns = {'old_name' : 'new_name'}) : columns 이름 바꿔주기\n",
+    "- df.renmae(columns = {'old_name' : 'new_name'}) : columns 이름 바꿔주기\n",
     "- df.stypes : 데이터 타입 확인\n",
     "- df.describe() : 각 컬럼의 데이터를 요약해서 보여줌\n",
     "- df.isnull().sum() : null 값 확인\n",
